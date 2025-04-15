@@ -1,0 +1,154 @@
+/* google Fonts - Popins */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;   
+} 
+body
+ {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f4f4;
+}
+.profile-card
+{
+    max-width: 370px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff ;
+    border-radius: 24px;
+    padding: 25px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    position : relative;
+}    
+.profile-card::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 26%;
+    width: 100%;
+    border-radius: 24px 24px 0 0;
+    background: #4070f4;
+    
+}   
+.image
+{
+    width: 150px;
+    height: 150px;
+    position: relative;
+    border-radius: 50%;
+    background-color:#4070f4;
+    padding: 3px;
+    overflow: hidden;
+    
+}
+.image .profile-image
+{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    border: 3px solid #fff;
+    border-radius: 50%;
+
+}
+.profile-card .text-data
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    color:#333;
+}
+.text-data .name
+{
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.text-data .job
+{
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.profile-card .media-buttons
+{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+
+}
+.media-buttons .link
+{
+    height: 34px;
+    width: 34px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    font-size: 18px;
+    align-items: center;
+    background-color: #4070f4;
+    text-decoration: none;
+    
+}
+.profile-card .buttons
+{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+}
+.buttons .button
+{
+    height: 40px;
+    width: 150px;
+    border-radius: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4070f4;
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+.buttons .button:hover
+{
+    background-color: #0e4bf1;
+}
+.profile-card .analytics
+{
+    display: flex;
+    margin-top: 25px;
+    align-items: center;
+}
+
+.analytics .data
+{
+    display: flex;
+    align-items: center;
+    background-color: #f2f2f2;
+    color: #333;
+    padding: 0 20px;
+    border-right: 2px solid #e7e7e7;
+}
+.data:last-child
+    {
+        border-right: none;
+    }

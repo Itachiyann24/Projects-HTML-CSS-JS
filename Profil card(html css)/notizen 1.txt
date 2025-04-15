@@ -1,0 +1,3 @@
+pour commenter sur le HTML	:<!-- -->
+pour introduire le css :<link rel="stylesheet" href="">
+Bixons css pour une haute de style des pages web

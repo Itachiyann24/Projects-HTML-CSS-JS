@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@200;300;400;500;600;700&display=swap");
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+}
+body
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height:100vh ;
+    width: 100%;
+
+    
+
+}
+body::before 
+{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url(https://i1.sndcdn.com/artworks-000240246639-aguj6y-t500x500.jpg);
+    background-position: center;
+    background-size: cover;
+    
+}
+.login-wrapper
+{
+    position: absolute;
+    width: 400px;
+    padding: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 8px;
+    text-align: center;
+    backdrop-filter: blur(8px) ;
+    -webkit-backdrop-filter: blur(8px) ;
+    
+}
+form
+{
+    display: flex;
+    flex-direction:column;
+
+}
+form h2
+{
+    font-size: 2rem;
+    color: #fff;
+    margin-bottom:20px ;
+}
+.input-field
+{
+    position: relative;
+    margin  : 15px 0;
+    border-bottom:2px solid #ccc;
+
+}
+
+.input-field input
+{
+    width: 100%;
+    height: 40px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    color: #fff;
+    
+}
+
+.input-field label 
+{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 1rem;
+    pointer-events: none;
+    transition:  0.3s ease;
+}
+
+.input-field input:focus + label, 
+.input-field input:valid + label
+{
+    transform: translateY(-120%);
+    font-size: 0,8rem;
+    top: 10px;
+}    
+.passwort-options
+{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 25px 0 35px 0;
+    color: #fff;
+}
+
+.passwort-options label
+{
+    display: flex;
+    align-items:center;
+}
+#remember
+{
+    accent-color: #fff;
+}
+.passwort-options label p
+{
+    margin-left: 8px;
+}
+.login-wrapper a
+{
+    color: #efefef;
+    text-decoration: none;
+    margin-top: 20px;
+}
+
+.login-wrapper a:hover
+{
+    text-decoration: underline;
+}
+button
+{
+    width: 100%;
+    height: 40px;
+    background: #fff;
+    color: #000;
+    border: 2px solid transparent;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    padding:12px 20px;
+    transition: background 0.3s ease;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+
+button:hover
+{
+    background: rgba(255, 255, 255, 0,15);
+    color: #fff;
+    border-color: #fff;
+}
+.account-options
+{
+    text-align: center;
+    margin-top: 20px;
+    color: #fff;
+    
+}

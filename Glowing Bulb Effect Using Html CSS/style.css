@@ -1,0 +1,134 @@
+/*import google font poppins */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@300;400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+body
+{
+    background:black;
+    
+    min-width: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 70px;
+}
+
+.wrapper h1{
+    font-family: "Playfair Display", serif;
+    font-size: 28px;
+    text-align: center;
+    align-items: center;
+    max-width: 100%;
+    color: #fff;
+    text-shadow: 2px 2px 5px rgba(233, 227, 227, 0.5);
+}
+
+.wrapper
+{
+    height: 500px;
+    width: 450px;
+}
+.wrapper img
+{
+    position: absolute;
+    width: 60%;
+    height:400px;
+    margin-top: 50px;
+    right: 15%;
+    
+    
+
+}
+.wrapper label
+{
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    right: 50%;
+    transform: translateX(-50%);
+}
+.wrapper label span
+{
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+    display: block;
+    border: 2px solid #fff;
+    width: 180px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    
+    
+}
+
+.wrapper label span::before
+{
+    content: "TURN OFF";
+}
+
+.wrapper label span:hover
+{
+    background-color: #fff;
+    color: black;
+}
+.wrapper img#bulb-on
+{
+    opacity: 0;
+    animation: glow 3s linear infinite;
+    -webkit-animation: glow 3s linear infinite;
+
+
+}
+
+@keyframes glow
+
+{
+    0% {
+        opacity: 0;
+    }
+    5% {
+        opacity: 1;
+    }
+    70% {
+        opacity: 0;
+    }
+    74% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 0;
+    }
+    84% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    
+    
+    
+100% {
+        opacity: 1;
+    }
+}
+#btn:checked ~ img#bulb-on
+{
+    animation: none;
+    -webkit-animation: none;
+}
+.wrapper input
+{
+    display: none;
+}
+#btn:checked ~ label span::before
+{
+    content: "TURN ON";
+}

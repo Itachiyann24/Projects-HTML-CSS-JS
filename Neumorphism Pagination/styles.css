@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@300;400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+html, body
+{
+    height: 100%;
+    display: grid;
+    justify-content: center;
+    place-items: center;
+    background-color: rgb(240, 227, 227);
+
+}
+
+.container
+{
+    background-color: rgb(240, 227, 227);
+    padding: 25px;
+    border-radius: 3px;
+    box-shadow: -3px -3px 7px #fffff3,3px 3px 5px rgba(94, 104, 121,0.288);
+    
+}
+.container ul
+{
+    display: flex;
+    list-style-type: none;
+}
+.container .pagination li
+{
+    background-color: rgb(240, 227, 227);
+    flex:1;
+    margin: 0 5px;
+    border-radius: 3px;
+    box-shadow: -3px -3px 7px #fffff3,3px 3px 5px rgba(94, 104, 121,0.288);
+}
+.pagination li a
+{
+    font-size: 18px;
+    text-decoration: none;
+    color:#4d3252;
+    height: 45px;
+    width: 55px;
+    display: block;
+    line-height: 45px;
+    text-align: center;
+
+}
+
+
+
+.pagination li.active 
+{
+   
+    box-shadow: inset -3px -3px 7px #fffff3,
+                inset  3px 3px 5px rgba(94, 104, 121,0.288);
+}
+.pagination li.active a
+{
+    font-size: 12px;
+    color: #6f6cde;
+}
+.pagination li:last-child a
+{
+    width: 100px;
+}
+.pagination li:first-child a
+{
+    width: 120px;
+}
+.pagination li:last-child 
+{
+    margin: 0 0 0 15px;
+}
+.pagination li:first-child 
+{
+    margin: 0 15px 0 0;
+}

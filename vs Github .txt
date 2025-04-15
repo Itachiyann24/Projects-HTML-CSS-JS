@@ -1,0 +1,15 @@
+repository= un dossier ou espace virtuel
+mkdir :pour creer un document
+dir : pour lister les dossier a l interieur d un document
+pour retierer un dossier d un chemin : CD (espace) ..
+clonage du fichier:
+git clone lien du https
+code (espace) .:pour ouvrir Vs code
+add index file( a fin de pouvoir de push sur github
+local---> changed-----> committed (push)-----> github
+auzthentification mon github sur vs code :
+git config --global user.name "Nom dutilisateur"
+git config --global user.email "Nom dutilisateur"
+git commit - m "added index file"
+git push( a fin e transferer les fichier sur GITHUB)
+j

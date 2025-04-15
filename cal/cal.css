@@ -1,0 +1,40 @@
+body{
+    background-color: #cc3399;
+    padding: 300px;
+    margin: 300x;
+    display : inline-block;
+    
+}
+
+#cal{ 
+    border: 10px, 10px solid black;
+    border-radius: 10px;
+    background-color:white;
+    width: 400px;
+    height:300px ;
+
+  } 
+  .ecran{
+  background-color: black;
+  padding: 30px;
+  color: rosybrown;
+  
+  
+  
+}
+.numeros{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(6, 40px);
+   
+}
+
+.btn-numeros{
+   background-color:#cc33ff;
+   overflow: hidden;
+   text-shadow: 2px 2px gray ;
+   cursor: pointer;
+   transition:badground-color 0,3s;
+   font-size: 2;
+  
+}

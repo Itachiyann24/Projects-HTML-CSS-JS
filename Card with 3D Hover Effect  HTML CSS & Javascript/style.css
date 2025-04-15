@@ -1,0 +1,90 @@
+/* Import Google Fongt - Poppins*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+body
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #f3e710;   
+  perspective: 1000px;
+  transform-style: preserve-3d;
+}
+.card
+{
+    background: white;
+    height:380px;
+    width: 300px;
+    margin:auto;
+    border-radius:5px;
+    padding: 20px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform-style: preserve-3d;
+
+}
+.card .content
+{
+    color : #202020;
+    text-align: center;
+    transform-style: preserve-3d;
+
+}
+.content .user{
+    height:100px;
+    width:100px;
+    background:#e7dd12;
+    border: 1px solid #d3de06;
+    border-radius: 50%;
+    margin: 10px auto;
+    transform: translateZ(50px);
+
+}
+.user .fa-user
+{
+    color: white;
+    font-size: 40px;
+    line-height:100px;
+
+}
+.content header
+{
+ font-size:45px;
+ font-weight:600;
+ transform: translateZ(50px);
+
+}
+.content .follow-us
+{
+    font-size:23px;
+    font-weight:600;
+   
+}
+.content .icons
+{
+  margin:20px 0 10px 0;
+}
+.icon a 
+{
+    margin:0 4px;
+}
+.icons a span 
+{
+    height: 45px;
+    width:45px;
+    background:#ada509;
+    border: 1px solid #d3de06;
+    line-height: 44px;
+    border-radius:50px;
+    color: white;
+    font-size:20px;
+}
