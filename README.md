@@ -92,4 +92,3 @@ Eine Sammlung meiner Frontend-Projekte – UI-Komponenten, interaktive Apps und 
 
 ---
 
-## Projekt-Struktur
